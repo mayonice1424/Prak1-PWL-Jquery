@@ -16,14 +16,14 @@ body {
 }
 
 input[type="text"] {
-  padding: 10px;
-  margin: 10px auto;
-  display: block;
-  border-radius: 5px;
-  border: 1px solid lightgrey;
-  background: none;
-  width: 274px;
-  color: black;
+padding: 10px 10px;
+display: block;
+border-radius: 5px;
+border: 1px solid lightgrey;
+background: none;
+width: 150px;
+color: black;
+margin: 10px;
 }
 
 input[type="text"]:focus {
@@ -66,19 +66,19 @@ h3 {
 }
 
 select[type="text"]{
-  padding: 10px;
-  margin: 10px auto;
+  padding: 10px 10px;
   display: block;
   border-radius: 5px;
   border: 1px solid lightgrey;
   background: none;
-  width: 274px;
+  width: 150px;
   color: black;
+  margin: 10px;
 }
 
 #produk_options div{
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
 }
 
 .strip{
@@ -94,3 +94,12 @@ select[type="text"]{
   border-radius: 4px;
   color: #f0f5ff;
 }
+
+form{
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+}
+.name{
+  }

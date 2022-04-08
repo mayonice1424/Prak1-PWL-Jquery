@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Dynamic Fields - Day #29</title>
+  <link rel="stylesheet" type="text/css" href="./index.css">
+  <!-- include font awesome -->
+  <link rel="stylesheet" type="text/css"
+    href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+
+<body>
+
+  <h1>Pemesanan Produk</h1>
+  <div class="strip">
+
+  </div>
+  <div class="wrapper">
+    <h3>Data</h3>
+    <h4>Nama : </h4>
+    <input type="text" name="name" class="name" size="50" placeholder="Name">
+    <h4>Pilih Produk : </h4>
+    <div id="produk_options">
+      <form>
+        <select  type="text" name="dropdown">
+          <option value="Jet Temput" selected>Jet Temput</option>
+          <option value="Nuklir Hiroshima">Nuklir Hiroshima</option>
+          <option value="Infinity Stone">Infinity Stone</option>
+          <option value="Burj Khalifa">Burj Khalifa</option>
+          <option value="Rudal Hipersonik">Rudal Hipersonik</option>
+        </select>
+      </form>
+      <input type="text" name="produk_options[]" class="produk_options" size="50" placeholder="Jumlah">
+    </div>
+    <div class="controls">
+      <a href="#" id="add_more_fields"><button class="button">Pesan</button></a>
+      <a href="#" id="remove_fields"><button class="button">Hapus 1 Pesanan</button></a>
+    </div>
+  </div>
+  <script src="./index.js"></script>
+</body>
+
+</html>

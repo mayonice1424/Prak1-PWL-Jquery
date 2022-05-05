@@ -24,7 +24,7 @@ hr{
   margin-top: 0;
   border-radius: 10px;
   border: 1px solid #ccc;
-  width: 30%;
+  width: 45%;
   padding-bottom: 50px;
   box-shadow: rgba(0, 0, 0, 0.2) 0px 18px 50px -10px;
 
@@ -74,7 +74,7 @@ select {
   border: 1px solid #ccc;
 }
 
-.cont2 {
+.cont-2 {
   padding-top: 5px;
 }
 
@@ -82,7 +82,7 @@ select {
   margin: 5px;
 }
 
-.cont3 {
+.cont-3 {
   padding-left: 30px;
 }
 
@@ -96,7 +96,7 @@ button {
   margin-bottom: 5px;
   border-width: 0;
   text-align: center;
-  width: max-content;
+  width: max-content
 }
 
 .btn-2 {
@@ -106,8 +106,8 @@ button {
 }
 
 .btn-3 {
-  margin-top: 11px;
-  padding: 4px 12px !important;
+  margin-top: 10px;
+  padding: 2px 12px !important;
   align-items: center;
   display: flex;
   background-color: rgb(255, 255, 255);

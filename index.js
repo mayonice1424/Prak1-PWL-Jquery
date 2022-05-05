@@ -69,14 +69,14 @@ $(document).ready(function () {
       (data) => data.namaBarang === $("#produk-" + n).val(),
     );
     n += 1;
-    let pesanan = `<div class="cont-2"><div class="left" id="id-${n}"><label for="produk-${n}">Produk</label><br><select id="produk-${n}" required><option value="" hidden selected>Pilih produk</option>`;
+    let pesanan = `<div class="clearfix cont-2"><div class="left" id="id-${n}"><label for="produk-${n}">Produk</label><br><select id="produk-${n}" required><option value="" hidden selected>Pilih produk</option>`;
     //mapping produk ke select
     products.map((data) => {
       pesanan += `<option value="${data}">${data}</option>`;
     }
   );
     //membuat input jumlah dan tombol hapus
-    pesanan += `</select><br></div><div class="left-cont-3"><label for="jumlah-${n}" style="padding-left: 5px;">Jumlah</label><br><input type="nber" id="jumlah-${n}" class="jumlah" required><br></div>`;
+    pesanan += `</select><br></div><div class="left cont-3"><label for="jumlah-${n}" style="padding-left: 5px;">Jumlah</label><br><input type="nber" id="jumlah-${n}" class="jumlah" required><br></div>`;
     pesanan += `<div id='button-delete' class="left pd-top"><button id="btn-del-${n}" class="btn-3"><div class = box style="padding-top:5px;color:red;border-color:red;">x</div></button></div>`;
     $(this).before(pesanan);
 

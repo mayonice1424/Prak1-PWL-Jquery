@@ -1,44 +1,56 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="en">
 <head>
-  <title>Dynamic Fields - Day #29</title>
-  <link rel="stylesheet" type="text/css" href="./index.css">
-  <!-- include font awesome -->
-  <link rel="stylesheet" type="text/css"
-    href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-
-</head>
-
-<body>
-
-  <h1>Pemesanan Produk</h1>
-  <div class="strip">
-
-  </div>
-  <div class="wrapper">
-    <h3>Data</h3>
-    <h4>Nama : </h4>
-    <input type="text" name="name" class="name" size="50" placeholder="Name">
-    <h4>Pilih Produk : </h4>
-    <div id="produk_options">
-      <form>
-        <select  type="text" name="dropdown">
-          <option value="Jet Temput" selected>Jet Temput</option>
-          <option value="Nuklir Hiroshima">Nuklir Hiroshima</option>
-          <option value="Infinity Stone">Infinity Stone</option>
-          <option value="Burj Khalifa">Burj Khalifa</option>
-          <option value="Rudal Hipersonik">Rudal Hipersonik</option>
-        </select>
-        <input type="text" name="produk_options[]" class="produk_options" size="50" placeholder="Jumlah">
-      </form>
-    </div>
-    <div class="controls">
-      <a href="#" id="add_more_fields"><button class="button">Pesan</button></a>
-      <a href="#" id="remove_fields"><button class="button">Hapus 1 Pesanan</button></a>
-    </div>
-  </div>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="jquery-3.6.0.js"></script>
   <script src="./index.js"></script>
+  <link href="./index.css" rel="stylesheet" >
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" >
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;800&display=swap" rel="stylesheet">
+  <title>Tugas Praktikum 1 PWL</title>
+</head>
+<body>
+  <header>
+    <h2>Pemesanan Produk</h2>
+    <hr>
+  </header>
+  <div class="container">
+    <h1 id="nama"></h1>
+    <h3 id="list-produk"></h3>
+    <div class="card-wrap">
+      <div class="card">
+        <h2>Produk</h2>
+        <form id="form" onsubmit="return false">
+          <div class="pad-right">
+            <h3>Nama</h3><br>
+            <input type="text" id="nama-pemesan" class="full-width" onchange="nama()" required>
+          </div>
+          <h3>Pilih produk</h3>
+          <div class="clearfix cont2">
+            <div class="left">
+              <label for="produk-1" style="padding-left: 5px, top = 5px;">Produk</label><br>
+              <select id="produk-1" required  >
+                <option value="0" hidden selected>Pilih produk</option>
+                <option value="Jet Tempur">Jet Tempur</option>
+                <option value="Nuklir Hiroshima">Nuklir Hiroshima</option>
+                <option value="Infinity Stone">Infinity Stone</option>
+                <option value="Burj Khalifa">Burj Khalifa</option>
+                <option value="Rudal Hipersonik">Rudal Hipersonik</option>
+              </select>
+              <br>
+            </div>
+            <div class="left cont3">
+              <label for="jumlah-1" style="padding-left: 5px, top = 5px;">Jumlah</label><br>
+              <input type="number" id="jumlah-1" class="jumlah" required><br>
+            </div>
+          </div>
+          <button id="btn-tambah" class="btn-1 full-width">Tambah Produk</button><br>
+          <button id="btn-pesan" class="btn-2 full-width">Pesan</button>
+        </form>
+      </div>
+    </div>
+  </div>
 </body>
-
 </html>

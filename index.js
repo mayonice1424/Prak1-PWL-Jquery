@@ -90,6 +90,6 @@ $(document).ready(function () {
 });
 // langsung menampilkan nama ketika input nama telah diisi
 function nama (){
-  var nama = $("#nama").html(`${$("#nama-pemesan").val()}`);
+  var nama = $("#nama").html(`${$("#nama-pembeli").val()}`);
   $("#nama").show() = nama;
   }
